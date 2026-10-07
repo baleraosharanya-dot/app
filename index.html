@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Match</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Arcade Challenge</p>
+          <h1>Memory Match</h1>
+        </div>
+        <button id="restart-button" class="restart-button" type="button">New Game</button>
+      </header>
+
+      <section class="stats" aria-label="Game stats">
+        <div class="stat-card">
+          <span class="stat-label">Moves</span>
+          <strong id="moves">0</strong>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Time</span>
+          <strong id="timer">00:00</strong>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Matches</span>
+          <strong id="matches">0 / 8</strong>
+        </div>
+      </section>
+
+      <div id="message" class="message" aria-live="polite">Find all the matching pairs!</div>
+
+      <section id="game-board" class="game-board" aria-label="Memory card board"></section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
